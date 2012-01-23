@@ -1,13 +1,13 @@
 
 <!-- CONTENT -->
 
-<div id="content">
+
   <div id="leftPan">
     <div id="programs">
       <h2></h2>
-      <p><span><img alt="ad" src="/images/b_side_ad1.jpg" /></span></p>
-      <p><span><img alt="ad" src="/images/b_side_ad2.jpg" /></span></p>
-      <p><span><img alt="ad" src="/images/b_side_ad3.jpg" /></span></p>
+      <% @ads.each do |ad| %>
+        <p><span> <%= link_to image_tag(ad.imagem_path),"/anuncio/#{ad.id}" %> </span></p>
+      <% end %>
     </div>
   </div>
 
@@ -42,9 +42,9 @@
 
 <div id="rightPan">
   <h2></h2>
-  <p class="news1"><a href="#">Raul Filho se licencia para ir aos Estados Unidos; Edna assume na segunda </a> </p>
-  <p class="news2"><a href="#">Jogador de Augustinópolis pode estrear no Vasco da Gama no Campeonato Carioca  </a></p>
-  <p class="news3"><a href="#">Tocantins é o 5º Estado com maior crescimento de milionários, diz Veja </a> </p>
+  <p class="news"><a href="#">Raul Filho se licencia para ir aos Estados Unidos; Edna assume na segunda </a> </p>
+  <p class="news"><a href="#">Jogador de Augustinópolis pode estrear no Vasco da Gama no Campeonato Carioca  </a></p>
+  <p class="news"><a href="#">Tocantins é o 5º Estado com maior crescimento de milionários, diz Veja </a> </p>
 </div>
 <div class="clear"></div>
 
@@ -67,5 +67,4 @@
   </div>
 
   <div class="clear"></div>
-</div>
 </div>

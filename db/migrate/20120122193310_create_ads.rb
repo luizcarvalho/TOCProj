@@ -3,8 +3,8 @@ class CreateAds < ActiveRecord::Migration
     create_table :ads do |t|
       t.string :nome
       t.string :imagem
-      t.string :url
-      t.integer :visitas
+      t.string :url,:default=>"http://"
+      t.integer :visitas,:default=>0
 
       t.timestamps
     end

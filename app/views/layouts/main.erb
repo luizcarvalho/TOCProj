@@ -34,15 +34,16 @@
       -->
     </div>
 
-    <div id="container">
+<div id="content">
       <% if session[:user] %>
-      <div class="right"><%= link_to "Sair",main_logout_path %></div>
+        <div class="right"><%= link_to "Sair",main_logout_path %></div>
       <% end %>
       <%= yield %>
-    </div>
+</div>
+    
     <!-- FOOTER -->
     <div id="footer">
-      <p><a href="#">Início</a> | <a href="#">Sobre</a> | <a href="#">PROGRAMA</a> |  <a href="#">Notícias</a> | <a href="#">Contato</a><br/>
+      <p><a href="#">INÍCIO</a> | <a href="#">SOBRE</a> | <a href="#">PROGRAMA</a> |  <a href="#">NOTÍCIAS</a> | <a href="#">CONTATO</a><br/>
         Copyright &copy; <a href="http://www.redrails.com.br">RedRails.com.br</a>. Design por <a href="http://www.twitter.com/LuizCarvalho">Luiz Carvalho</a></p>
     </div>
     <!--<div class="sponsor">Sponsored by<a href="http://www.wix.com/free/website?utm_campaign=templateyes&amp;experiment_id=templateyesexp" title="Free Flash Templates" target="_blank"><img src="images/banner-728x90.jpg" alt="Free Flash Templates" width="728" height="90" border="0" /></a></div>-->

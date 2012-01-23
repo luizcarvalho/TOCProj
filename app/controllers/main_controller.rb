@@ -1,6 +1,7 @@
 class MainController < ApplicationController
   skip_before_filter :verifica_acesso
   def home
+    @ads = Ad.all
   end
 
   def login

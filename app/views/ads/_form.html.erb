@@ -1,7 +1,7 @@
-<%= form_for(@ad) do |f| %>
+<%= form_for(@ad,:html => { :multipart => true }) do |f| %>
   <% if @ad.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@ad.errors.count, "error") %> prohibited this ad from being saved:</h2>
+      <h2><%= pluralize(@ad.errors.count, "erro") %> Impedem que este anunciante seja salvo:</h2>
 
       <ul>
       <% @ad.errors.full_messages.each do |msg| %>
@@ -17,17 +17,17 @@
   </div>
   <div class="field">
     <%= f.label :imagem %><br />
-    <%= f.text_field :imagem %>
+    <%= f.file_field :imagem %>
   </div>
   <div class="field">
     <%= f.label :url %><br />
     <%= f.text_field :url %>
   </div>
   <div class="field">
-    <%= f.label :visitas %><br />
+    <%= f.label :visitas,"Iniciar contador de visitas em" %><br />
     <%= f.text_field :visitas %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Criar Anuncio",:class=>"buttom" %>
   </div>
 <% end %>

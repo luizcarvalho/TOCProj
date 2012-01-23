@@ -1,4 +1,4 @@
-<h1>Listing ads</h1>
+<h1>Cadastro de Anunciantes</h1>
 
 <table>
   <tr>
@@ -6,9 +6,7 @@
     <th>Imagem</th>
     <th>Url</th>
     <th>Visitas</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th colspan="3">Controle</th>
   </tr>
 
 <% @ads.each do |ad| %>
@@ -17,13 +15,13 @@
     <td><%= ad.imagem %></td>
     <td><%= ad.url %></td>
     <td><%= ad.visitas %></td>
-    <td><%= link_to 'Show', ad %></td>
-    <td><%= link_to 'Edit', edit_ad_path(ad) %></td>
-    <td><%= link_to 'Destroy', ad, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Detalhes', ad %></td>
+    <td><%= link_to 'Alterar', edit_ad_path(ad) %></td>
+    <td><%= link_to 'Remover', ad, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Ad', new_ad_path %>
+<%= link_to 'Cadastrar Anunciante', new_ad_path %>

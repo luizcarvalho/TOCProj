@@ -1,4 +1,17 @@
 class AdsController < ApplicationController
+
+
+
+
+  def go
+    if(params[:id] and @ad = Ad.find(params[:id]))
+      @ad.visitas = @ad.visitas+=1
+      @ad.save!
+      redirect_to @ad.url
+    else
+      redirect_to root_path
+    end
+  end
   # GET /ads
   # GET /ads.xml
   def index

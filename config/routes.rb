@@ -8,7 +8,9 @@ Tocantinsemfoco::Application.routes.draw do
   resources :users
 
   get "main/home"
+  match 'anuncio/:id', :controller => 'ads', :action => 'go'
 
+  
   get "main/login"
   get "main/logout"
   post "main/do_login"
