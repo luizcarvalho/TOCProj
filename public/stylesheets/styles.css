@@ -1,0 +1,133 @@
+/* CSS Document */
+body{padding:0px; margin:0px; background:#FFF; color:#6f6f6f; font:10px/14px Tahoma, sans-serif;}
+div, p, ul, h2, h3, h4, img{padding:0px; margin:0px;}
+ul{list-style-type:none;}
+
+.clear {clear: both; margin: 0px}
+
+/* HEADER */
+
+#header{width:775px; height:373px; position:relative; background:url(../images/b_top.jpg) 0 0 no-repeat; margin: 0 auto; padding-bottom:2px;}
+
+#header #logo{width:268px; height:144px; position:absolute; top:26px; left:457px }
+
+#header #slogan{width:384px; height:58px; position:absolute; top:216px; left:320px }
+
+ul.menu {width:133px; position:absolute; top:26px; left:255px;}
+ul.menu li{padding-bottom: 1px}
+
+ul.menu li.home a{width:133px; height:30px; display:block; background:url(../images/btn_home.jpg) 0 0 no-repeat; text-indent:-20000px;}
+ul.menu li.home a:hover{width:133px; height:30px; background:url(../images/btn_home_over.jpg) 0 0 no-repeat;}
+
+ul.menu li.about a{width:133px; height:30px; display:block; background:url(../images/btn_about.jpg) 0 0 no-repeat; text-indent:-20000px;}
+ul.menu li.about a:hover{width:133px; height:30px; background:url(../images/btn_about_over.jpg) 0 0 no-repeat;}
+
+ul.menu li.programs a{width:133px; height:30px; display:block; background:url(../images/btn_programs.jpg) 0 0 no-repeat; text-indent:-20000px;}
+ul.menu li.programs a:hover{width:133px; height:30px; background:url(../images/btn_programs_over.jpg) 0 0 no-repeat;}
+
+ul.menu li.contacts a{width:133px; height:30px; display:block; background:url(../images/btn_contacts.jpg) 0 0 no-repeat; text-indent:-20000px;}
+ul.menu li.contacts a:hover{width:133px; height:30px; background:url(../images/btn_contacts_over.jpg) 0 0 no-repeat;}
+
+ul.buttons {position:absolute; top:307px; left:260px;}
+ul.buttons li{float:left;}
+
+ul.buttons li.contest a{width:271px; height:53px; display:block; background:url(../images/btn_contest.jpg) 0 0 no-repeat; text-indent:-20000px;}
+ul.buttons li.listen a{width:204px; height:53px; display:block; background:url(../images/btn_listen.jpg) 0 0 no-repeat; text-indent:-20000px;}
+
+
+/* CONTENT */
+
+#content{width:727px; position:relative; background:url(../images/b_content.jpg) 0 0 no-repeat; margin: 0 auto 10px auto; clear:both; padding:28px 20px 0 28px; }
+#content p a{font:10px/14px Tahoma, sans-serif; color:#026fe3; text-decoration:none;}
+#content p a:hover{color:#000;}
+
+#leftPan{width:131px; float:left; padding-right:43px;}
+
+#programs{position: relative; padding-top: 5px;}
+#programs h2{width:107px; height:18px; background:url(../images/h_programs.gif) 0 0 no-repeat; position:relative; padding-bottom:10px}
+#programs p{width:131px; position:relative; padding: 0 0 10px 0; }
+#programs p span{width:128px; height:75px; display: block; position:relative; padding: 0 0 0 3px;}
+
+#middlePan{width:342px; float:left; padding-right:43px; }
+
+#welcome{position: relative;}
+#welcome h2{width:337px; height:45px; background:url(../images/h_welcome.gif) 0 0 no-repeat; position:relative;}
+#welcome p{width:196px; position:relative; padding: 19px 2px 18px 144px; background:url(../images/img_welcome.jpg) 0 0 no-repeat; }
+#welcome p span{font:12px/14px Tahoma, sans-serif; color:#f80100;}
+
+ul.links{width:339px; border-top: #cfd8d9 1px solid; position:relative; padding: 3px 0 0 0; margin-left:3px; }
+ul.links li a{width:311px; height:16px; display:block; font:10px/16px Tahoma, sans-serif; color:#026fe3; text-decoration:none; background:url(../images/arrow.jpg) 17px 6px no-repeat; padding: 0 0 0 28px; }
+ul.links li a:hover{color:#000;}
+
+#rightPan{width:168px; float:left; }
+#rightPan h2{width:127px; height:20px; background:url(../images/h_news.gif) 0 0 no-repeat; position:relative; padding: 0 0 12px 0}
+#rightPan p a{font:10px/12px Tahoma, sans-serif; color:#026fe3; text-decoration: underline;}
+#rightPan p.news1{width:133px; position:relative; padding: 4px 2px 15px 4px;  2px 0 no-repeat; font:10px/12px Tahoma, sans-serif;}
+#rightPan p.news2{width:133px; position:relative; padding: 4px 2px 15px 4px;  2px 0 no-repeat; font:10px/12px Tahoma, sans-serif;}
+#rightPan p.news3{width:133px; position:relative; padding: 4px 2px 15px 4px;  2px 0 no-repeat; font:10px/12px Tahoma, sans-serif;}
+
+/* ADS */
+
+#ads{width:747px; position:relative; margin: 0 auto 10px auto; clear:both; padding:0 0 0 28px;}
+
+#contacts{width:95px; float:left; }
+#contacts h2{width:79px; height:18px; background:url(../images/h_contacts.gif) 0 0 no-repeat; position:relative; padding-bottom:10px}
+#contacts p{font:10px/12px Tahoma, sans-serif; color:#acb0a5; padding-bottom:5px; padding-left:5px;}
+#contacts p span{font-weight:bold;}
+#contacts p a{font:10px/12px Tahoma, sans-serif; color:#acb0a5; text-decoration:none}
+#contacts p a:hover{color:#000; text-decoration:underline;}
+
+#ad1{width:300px; height:120px; position:relative; float:right; padding-left:15px; background:url(../images/b_ad1.jpg) 0 0 no-repeat ;background-position:right;  }
+#ad2{width:300px; height:120px; float:right; position:relative; padding-left:15px; background:url(../images/b_ad2.jpg) 0 0 no-repeat ;background-position:right; }
+
+
+
+#ads p span{font:11px/12px Tahoma, sans-serif;  color:#000;}
+
+/* FOOTER */
+
+#footer{width:775px; height:64px; position:relative; background:url(../images/line_footer.jpg) 0 0 no-repeat; margin: 0 auto; clear:both;}
+#footer p{padding:20px 0 0 203px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal; text-align:center; color:#737474; display:block; }
+#footer a{font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal;  color:#737474; text-decoration:none; padding: 0 5px}
+#footer a:hover{color:#FFF; text-decoration:none; background:#000;}
+.sponsor {
+    margin: auto;
+    width: 728px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.sponsor img {
+    margin-top: 5px;
+}
+
+
+/***CUSTOM***/
+
+#container{
+    width:775px;
+    height:373px;
+    position:relative; 
+    margin: 0 auto; padding-bottom:2px;
+}
+
+#loginform {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #270644;
+    position: relative;
+    left: 210px;
+    top: 100px;
+}
+
+
+.error_explanation{
+    position: relative;
+    left: 25%;
+    width: 400px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}

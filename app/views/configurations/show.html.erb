@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @configuration.tipo %>
+</p>
+
+<p>
+  <b>Label:</b>
+  <%= @configuration.label %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @configuration.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_configuration_path(@configuration) %> |
+<%= link_to 'Back', configurations_path %>

@@ -1,0 +1,23 @@
+<% if @msg %>
+<div class="error_explanation">
+  <h2><%= @msg %></h2>
+</div>
+<% end %>
+
+<div id="loginform">
+  <%= form_tag "do_login" do  %>
+
+    <div class="field">
+      <%= label_tag "Usuário" %><br />
+      <%= text_field_tag "user[login]" %>
+    </div>
+    <div class="field">
+      <%= label_tag :senha %><br />
+      <%= text_field_tag "user[senha]" %>
+    </div>
+    <div class="actions">
+      <%= submit_tag "Entrar" %>
+    </div>
+  <% end %>
+
+</div>
