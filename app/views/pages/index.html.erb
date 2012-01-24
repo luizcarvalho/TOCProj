@@ -10,13 +10,13 @@
 <% @pages.each do |page| %>
   <tr>
     <td><%= page.titulo %></td>
-    <td><%= link_to 'Mostrar', page %></td>
-    <td><%= link_to 'Editar', edit_page_path(page) %></td>
-    <td><%= link_to 'Remover', page, :confirm => 'Tem certeza?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', page,:class=>"link_bt" %></td>
+    <td><%= link_to 'Editar', edit_page_path(page),:class=>"link_bt" %></td>
+    <td><%= link_to 'Remover', page, :confirm => 'Tem certeza?', :method => :delete,:class=>"link_bt" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Nova Página', new_page_path %>
+<%= link_to 'Nova Página', new_page_path,:class=>"link_bt" %>

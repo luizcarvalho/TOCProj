@@ -15,13 +15,13 @@
     <td><%= ad.imagem %></td>
     <td><%= ad.url %></td>
     <td><%= ad.visitas %></td>
-    <td><%= link_to 'Detalhes', ad %></td>
-    <td><%= link_to 'Alterar', edit_ad_path(ad) %></td>
-    <td><%= link_to 'Remover', ad, :confirm => 'Tem certeza?', :method => :delete %></td>
+    <td><%= link_to 'Detalhes', ad,:class=>"link_bt" %></td>
+    <td><%= link_to 'Alterar', edit_ad_path(ad),:class=>"link_bt" %></td>
+    <td><%= link_to 'Remover', ad, :confirm => 'Tem certeza?', :method => :delete,:class=>"link_bt" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Cadastrar Anunciante', new_ad_path %>
+<%= link_to 'Cadastrar Anunciante', new_ad_path,:class=>"link_bt" %>
