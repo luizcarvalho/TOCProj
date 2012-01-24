@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(:version => 20120122193310) do
   create_table "ads", :force => true do |t|
     t.string   "nome"
     t.string   "imagem"
-    t.string   "url"
-    t.integer  "visitas"
+    t.string   "url",        :default => "http://"
+    t.integer  "visitas",    :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
