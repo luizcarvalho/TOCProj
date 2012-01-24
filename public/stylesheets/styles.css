@@ -16,17 +16,17 @@ a {color: red;}
 ul.menu {width:133px; position:absolute; top:26px; left:255px;}
 ul.menu li{padding-bottom: 1px}
 
-ul.menu li.home a{width:133px; height:30px; display:block; background:url(../images/btn_home.jpg) 0 0 no-repeat; text-indent:-20000px;}
-ul.menu li.home a:hover{width:133px; height:30px; background:url(../images/btn_home_over.jpg) 0 0 no-repeat;}
+ul.menu li.inicio a{width:133px; height:30px; display:block; background:url(../images/btn_home.jpg) 0 0 no-repeat; text-indent:-20000px;}
+ul.menu li.inicio a:hover{width:133px; height:30px; background:url(../images/btn_home_over.jpg) 0 0 no-repeat;}
 
-ul.menu li.about a{width:133px; height:30px; display:block; background:url(../images/btn_about.jpg) 0 0 no-repeat; text-indent:-20000px;}
-ul.menu li.about a:hover{width:133px; height:30px; background:url(../images/btn_about_over.jpg) 0 0 no-repeat;}
+ul.menu li.sobre a{width:133px; height:30px; display:block; background:url(../images/btn_about.jpg) 0 0 no-repeat; text-indent:-20000px;}
+ul.menu li.sobre a:hover{width:133px; height:30px; background:url(../images/btn_about_over.jpg) 0 0 no-repeat;}
 
-ul.menu li.programs a{width:133px; height:30px; display:block; background:url(../images/btn_programs.jpg) 0 0 no-repeat; text-indent:-20000px;}
-ul.menu li.programs a:hover{width:133px; height:30px; background:url(../images/btn_programs_over.jpg) 0 0 no-repeat;}
+ul.menu li.programa a{width:133px; height:30px; display:block; background:url(../images/btn_programs.jpg) 0 0 no-repeat; text-indent:-20000px;}
+ul.menu li.programa a:hover{width:133px; height:30px; background:url(../images/btn_programs_over.jpg) 0 0 no-repeat;}
 
-ul.menu li.contacts a{width:133px; height:30px; display:block; background:url(../images/btn_contacts.jpg) 0 0 no-repeat; text-indent:-20000px;}
-ul.menu li.contacts a:hover{width:133px; height:30px; background:url(../images/btn_contacts_over.jpg) 0 0 no-repeat;}
+ul.menu li.contato a{width:133px; height:30px; display:block; background:url(../images/btn_contacts.jpg) 0 0 no-repeat; text-indent:-20000px;}
+ul.menu li.contato a:hover{width:133px; height:30px; background:url(../images/btn_contacts_over.jpg) 0 0 no-repeat;}
 
 ul.buttons {position:absolute; top:307px; left:260px;}
 ul.buttons li{float:left;}

@@ -12,14 +12,6 @@
   <body>
     <!-- HEADER -->
     <div id="header">
-      <ul class="menu">
-        <li class="home"><a href="/" title="Home">Início</a></li>
-        <li class="about"><a href="/" title="Sobre">Sobre</a></li>
-        <li class="programs"><a href="/" title="Programa">Programa</a></li>
-        <li class="contacts"><a href="/" title="Contato">Contato</a></li>
-
-      </ul>
-
       <div id="logo">
         <a onclick="window.open(this.href, this.target, 'width=300,height=230'); return false;" target="popup" href="/player" >
           <img src="/images/radio.jpg" alt="Tocantins em Foco Rádio Online" width="268" height="144" border="0" />
@@ -36,6 +28,7 @@
 
     <div id="menu">
       <% if session[:user] %>
+          <%= link_to "Página Inicial",root_path %>
           <%= link_to "Anunciantes",ads_path %>
           <%= link_to "Páginas",pages_path %>
           <%= link_to "Notícias",posts_path %>
@@ -45,6 +38,10 @@
     </div>
     
     <div id="container">
+    <% if notice %>
+      <p id="notice"> <%= notice %> </p>
+    <% end %>
+
       <%= yield %>
     </div>
     <!-- FOOTER -->

@@ -1,6 +1,7 @@
-<h1>Detalhes</h1>
-<p id="notice"><%= notice %></p>
+<%= link_to 'Alterar', edit_ad_path(@ad),:class=>"link_bt" %> |
+<%= link_to 'Voltar', ads_path,:class=>"link_bt" %>
 
+<h1>Detalhes</h1>
 <p>
   <b>Nome:</b>
   <%= @ad.nome %>
@@ -22,5 +23,3 @@
 </p>
 
 
-<%= link_to 'Edit', edit_ad_path(@ad),:class=>"link_bt" %> |
-<%= link_to 'Back', ads_path,:class=>"link_bt" %>

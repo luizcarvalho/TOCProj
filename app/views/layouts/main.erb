@@ -13,10 +13,10 @@
     <!-- HEADER -->
     <div id="header">
       <ul class="menu">
-        <li class="home"><a href="/" title="Home">Início</a></li>
-        <li class="about"><a href="/" title="Sobre">Sobre</a></li>
-        <li class="programs"><a href="/" title="Programa">Programa</a></li>
-        <li class="contacts"><a href="/" title="Contato">Contato</a></li>
+        <li class="inicio"><a href="/" title="Inicio">Início</a></li>
+        <li class="sobre"><a href="<%= "/pagina/#{@sobre.id}"  if @sobre%>" title="Sobre">Sobre</a></li>
+        <li class="programa"><a href="<%= "/pagina/#{@programa.id}" if @programa  %>"  title="Programa">Programa</a></li>
+        <li class="contato"><a href="<%= "/pagina/#{@contato.id}" if @contato  %>" title="Contato">Contato</a></li>
 
       </ul>
 

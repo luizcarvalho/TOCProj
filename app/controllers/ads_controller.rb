@@ -54,7 +54,7 @@ class AdsController < ApplicationController
 
     respond_to do |format|
       if @ad.save
-        format.html { redirect_to(@ad, :notice => 'Ad was successfully created.') }
+        format.html { redirect_to(@ad, :notice => 'Anúncio Criado com Sucesso!') }
         format.xml  { render :xml => @ad, :status => :created, :location => @ad }
       else
         format.html { render :action => "new" }
@@ -70,7 +70,7 @@ class AdsController < ApplicationController
 
     respond_to do |format|
       if @ad.update_attributes(params[:ad])
-        format.html { redirect_to(@ad, :notice => 'Ad was successfully updated.') }
+        format.html { redirect_to(@ad, :notice => 'Anúncio atualizado com Sucesso!') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

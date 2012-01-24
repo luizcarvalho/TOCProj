@@ -1,5 +1,13 @@
 class MainController < ApplicationController
   skip_before_filter :verifica_acesso
+  before_filter :load_pages,:only=>[:home,:noticia,:pagina]
+
+  def load_pages
+        @sobre = Page.find_by_rotulo("sobre")
+    @programa = Page.find_by_rotulo("programa")
+    @contato = Page.find_by_rotulo("contato")
+  end
+
   def home
     @ads = Ad.all
     @news = Post.order("created_at desc").limit(6)
@@ -37,10 +45,13 @@ end
 
 def noticia
     @page = Post.find(params[:id])
-
+    if @page
     respond_to do |format|
       format.html {render "page"}
       format.xml  { render :xml => @post }
+    end
+    else
+      redirect_to root_path
     end
 end
 

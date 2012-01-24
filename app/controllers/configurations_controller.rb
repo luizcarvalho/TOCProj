@@ -66,7 +66,7 @@ class ConfigurationsController < ApplicationController
 
     respond_to do |format|
       if @configuration.update_attributes(params[:configuration])
-        format.html { redirect_to(:action=>"home", :notice => 'Configuração Atualizada!') }
+        format.html { redirect_to({:action=>"home"}, :notice => 'Configuração Atualizada!') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
