@@ -42,9 +42,9 @@
 
 <div id="rightPan">
   <h2></h2>
-  <p class="news"><a href="#">Raul Filho se licencia para ir aos Estados Unidos; Edna assume na segunda </a> </p>
-  <p class="news"><a href="#">Jogador de Augustinópolis pode estrear no Vasco da Gama no Campeonato Carioca  </a></p>
-  <p class="news"><a href="#">Tocantins é o 5º Estado com maior crescimento de milionários, diz Veja </a> </p>
+  <% @news.each do |noticia|  %>
+    <p class="news"> <%= link_to noticia.titulo,"/noticia/#{noticia.id}" %> </p>
+  <% end %>
 </div>
 <div class="clear"></div>
 

@@ -13,15 +13,15 @@
     <!-- HEADER -->
     <div id="header">
       <ul class="menu">
-        <li class="home"><a href="#" title="Home Page">Início</a></li>
-        <li class="about"><a href="#" title="About Us">Sobre</a></li>
-        <li class="programs"><a href="#" title="Programs">Programa</a></li>
-        <li class="contacts"><a href="#" title="Contacts">Contato</a></li>
+        <li class="home"><a href="/" title="Home">Início</a></li>
+        <li class="about"><a href="/" title="Sobre">Sobre</a></li>
+        <li class="programs"><a href="/" title="Programa">Programa</a></li>
+        <li class="contacts"><a href="/" title="Contato">Contato</a></li>
 
       </ul>
 
       <div id="logo">
-        <a onclick="window.open(this.href, this.target, 'width=300,height=230'); return false;" target="popup" href="player.html" >
+        <a onclick="window.open(this.href, this.target, 'width=300,height=230'); return false;" target="popup" href="/player" >
           <img src="/images/radio.jpg" alt="Tocantins em Foco Rádio Online" width="268" height="144" border="0" />
         </a>
       </div>
@@ -34,17 +34,20 @@
       -->
     </div>
 
-    <div id="container">
+    <div id="menu">
       <% if session[:user] %>
-      <div class="right"><%= link_to "Sair",main_logout_path %></div>
+          <%= link_to "Anunciantes",ads_path %>
+          <%= link_to "Páginas",pages_path %>
+          <%= link_to "Notícias",posts_path %>
+          <%= link_to "Configurações","/bemvindo" %>
+        <div class="right"><%= link_to "Sair",main_logout_path %></div>
       <% end %>
+    </div>
+    
+    <div id="container">
       <%= yield %>
     </div>
     <!-- FOOTER -->
-    <div id="footer">
-      <p><a href="#">Início</a> | <a href="#">Sobre</a> | <a href="#">PROGRAMA</a> |  <a href="#">Notícias</a> | <a href="#">Contato</a><br/>
-        Copyright &copy; <a href="http://www.redrails.com.br">RedRails.com.br</a>. Design por <a href="http://www.twitter.com/LuizCarvalho">Luiz Carvalho</a></p>
-    </div>
     <!--<div class="sponsor">Sponsored by<a href="http://www.wix.com/free/website?utm_campaign=templateyes&amp;experiment_id=templateyesexp" title="Free Flash Templates" target="_blank"><img src="images/banner-728x90.jpg" alt="Free Flash Templates" width="728" height="90" border="0" /></a></div>-->
   </body>
 </html>

@@ -5,9 +5,8 @@
     <th>Tipo</th>
     <th>Label</th>
     <th>Value</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th colspan="3"></th>
+
   </tr>
 
 <% @configurations.each do |configuration| %>
@@ -15,13 +14,13 @@
     <td><%= configuration.tipo %></td>
     <td><%= configuration.label %></td>
     <td><%= configuration.value %></td>
-    <td><%= link_to 'Show', configuration %></td>
-    <td><%= link_to 'Edit', edit_configuration_path(configuration) %></td>
-    <td><%= link_to 'Destroy', configuration, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Detalhes', configuration %></td>
+    <td><%= link_to 'Editar', edit_configuration_path(configuration) %></td>
+    <td><%= link_to 'Remover', configuration, :confirm => 'Tem Certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Configuration', new_configuration_path %>
+<%= link_to 'Novo Parametro de Configuração', new_configuration_path %>

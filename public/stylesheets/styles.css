@@ -101,21 +101,40 @@ ul.links li a:hover{color:#000;}
 
 
 /***CUSTOM***/
-
-#container{
-    width:625px;
-    height:373px;
-    position:relative; 
-    margin: 0 auto; padding-bottom:2px;
-    padding: 75px 0px 75px 100px;
+#menu{
+    width:775px;
+    height:20px;
+    position:relative;
+    margin: 0 auto;
+    padding-bottom:2px;
 }
 
+#menu a{
+    width: auto;
+    padding: 5px 9px;
+    background: #777777;
+    border: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#container{
+    width:775px;
+    height:500px;
+    position:relative; 
+    margin: 0 auto; padding-bottom:2px;
+    padding: 75px;
+}
+
+
 #loginform {
-    width: 300px;    
+    width: 350px;
     padding: 20px;
     border: 1px solid #270644;
     position: relative;
-    left: 210px;
+    left: 150px;
     top: 100px;
 }
 .bot{
@@ -123,8 +142,9 @@ ul.links li a:hover{color:#000;}
 }
 
 .right{
-    display:block;
-   text-align: right;
+    float: right;
+    display: inline-block;
+    text-align: right;
 }
 .error_explanation{
     position: relative;
@@ -136,6 +156,18 @@ ul.links li a:hover{color:#000;}
     margin-bottom: 20px;
     background-color: #f0f0f0;
 }
+#notice{
+    color: #0f6400;
+    text-align: center;
+    font-weight: bold;
+    width:450px;
+    border: 2px solid green;
+    padding: 9px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #c0feb5;
+}
+
 /* BUTTONS */.buttons a, .buttons button{
     display:block;
     float:left;
@@ -172,46 +204,54 @@ ul.links li a:hover{color:#000;}
     height:16px;
 }
 /*=========  FORM*/
+.editor input{
+    width: 600px;
+}
 
 input, textarea {
-        padding: 9px;
-	border: solid 2px #E5E5E5;
-	outline: 0;
-	font: normal 13px/100% Verdana, Tahoma, sans-serif;
-	width: 200px;
-	background: #FFFFFF;
-        display: inline-block;
-	}
+    padding: 9px;
+    border: solid 2px #E5E5E5;
+    outline: 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    width: 300px;
+    background: #FFFFFF;
+    display: inline-block;
+}
 
 textarea {
-	width: 400px;
-	max-width: 400px;
-	height: 150px;
-	line-height: 150%;
-	}
+    width: 400px;
+    height: 150px;
+    line-height: 150%;
+}
 
 input:hover, textarea:hover,
 input:focus, textarea:focus {
-	border-color: #C9C9C9;
-	}
+    border-color: #C9C9C9;
+}
 
 form label {
-	margin-left: 10px;
-	color: #666;
-        font-weight: bold;
-        width: 100px;
-        display: inline-block;
-	}
+    margin-left: 10px;
+    color: #666;
+    font-weight: bold;
+    width: 100px;
+    display: inline-block;
+}
 
 .actions input {
-	width: auto;
-	padding: 9px 15px;
-	background: #BB0600;
-	border: 0;
-	font-size: 14px;
-	color: #FFFFFF;
+    width: auto;
+    padding: 9px 15px;
+    background: #BB0600;
+    border: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.field{
+    padding: 10px;
+}
 
-	}
-        .field{
-            padding: 10px;
+table{
+    border: 2px;
+}
+table td,tr{
+    padding: 6px;
 }

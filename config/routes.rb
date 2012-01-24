@@ -1,4 +1,6 @@
 Tocantinsemfoco::Application.routes.draw do
+  resources :posts
+
   resources :ads
 
   resources :pages
@@ -6,9 +8,11 @@ Tocantinsemfoco::Application.routes.draw do
   resources :configurations
 
   resources :users
-
+  match 'player', :controller => 'main', :action => 'player'
   get "main/home"
   match 'anuncio/:id', :controller => 'ads', :action => 'go'
+  match "noticia/:id", :controller => 'main', :action => 'noticia'
+  match "pagina/:id", :controller => 'main', :action => 'pagina'
 
   
   get "main/login"
@@ -16,6 +20,7 @@ Tocantinsemfoco::Application.routes.draw do
   post "main/do_login"
 
   get "main/config"
+  match "bemvindo", :controller => 'configurations', :action => 'home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

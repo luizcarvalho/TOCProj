@@ -1,3 +1,7 @@
+<%= javascript_include_tag "nicEdit" %>
+<script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
 <%= form_for(@page) do |f| %>
   <% if @page.errors.any? %>
     <div id="error_explanation">
@@ -11,15 +15,15 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="editor">
     <%= f.label :titulo %><br />
     <%= f.text_field :titulo %>
   </div>
-  <div class="field">
+  <div class="editor">
     <%= f.label :texto %><br />
-    <%= f.text_area :texto %>
+    <%= f.text_area :texto,:style=>"width: 600px;height: 370px;" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Atualizar" %>
   </div>
 <% end %>

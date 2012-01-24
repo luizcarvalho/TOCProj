@@ -1,8 +1,5 @@
 class AdsController < ApplicationController
 
-
-
-
   def go
     if(params[:id] and @ad = Ad.find(params[:id]))
       @ad.visitas = @ad.visitas+=1

@@ -1,0 +1,22 @@
+<% if @notice %>
+  <p id="notice"> <%= @notice  %> </p>
+<% end %>
+
+
+<% if @configuration_stream  %>
+<fieldset>
+  <legend>Configuração da Rádio </legend>
+<%= form_for(@configuration_stream) do |f| %>
+      <%= f.hidden_field :tipo %>
+      <%= f.hidden_field :label %>
+    <div class="field">
+        <%= f.label :value,"Endereço do Stream" %>
+        <%= f.text_field :value %>
+    </div>
+
+    <div class="actions">
+      <%= submit_tag "Alterar" %>
+    </div>
+  <% end %>
+  </fieldset>
+<% end %>

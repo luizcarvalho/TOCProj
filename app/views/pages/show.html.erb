@@ -1,15 +1,13 @@
-<p id="notice"><%= notice %></p>
+<%= link_to 'Editar', edit_page_path(@page) %> |
+<%= link_to 'Voltar', pages_path %>
 
-<p>
-  <b>Titulo:</b>
-  <%= @page.titulo %>
+
+<h1><%= @page.titulo %></h1>
+
+
+<p> 
+  <%=raw   @page.texto %>
 </p>
 
-<p>
-  <b>Texto:</b>
-  <%= @page.texto %>
-</p>
 
 
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>

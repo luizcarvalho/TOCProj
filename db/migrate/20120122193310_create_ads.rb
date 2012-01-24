@@ -4,6 +4,7 @@ class CreateAds < ActiveRecord::Migration
       t.string :nome
       t.string :imagem
       t.string :url,:default=>"http://"
+      t.integer :tipo,:default=>"0"
       t.integer :visitas,:default=>0
 
       t.timestamps

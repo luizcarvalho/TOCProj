@@ -1,0 +1,25 @@
+<html><head>
+        <style type="text/css">
+<!--
+body {
+	margin: 0px;
+}
+-->
+</style>
+  <script type="text/javascript" src="player/swfobject.js"></script>
+</head><body>
+<div style="z-index: -1999;">
+<img src="images/player.png" alt="Tocantins em Foco WEB Rádio"/>
+
+<div name="mediaspace" id="mediaspace">Seu servidor não suporta flash</div>
+<script type="text/javascript">
+var so = new SWFObject('player/player.swf','mpl','300','20','9');
+so.addParam('allowscriptaccess','always');
+so.addParam('allowfullscreen','false');
+so.addParam('allownetworking','all');
+so.addParam('flashvars','file=<%= @configuration_stream.value %>');
+so.write('mediaspace');
+</script>
+</div>
+
+</body></html>

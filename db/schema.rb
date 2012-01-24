@@ -10,12 +10,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120122193310) do
+ActiveRecord::Schema.define(:version => 20120124195256) do
 
   create_table "ads", :force => true do |t|
     t.string   "nome"
     t.string   "imagem"
     t.string   "url",        :default => "http://"
+    t.integer  "tipo",       :default => 0
     t.integer  "visitas",    :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -30,6 +31,13 @@ ActiveRecord::Schema.define(:version => 20120122193310) do
   end
 
   create_table "pages", :force => true do |t|
+    t.string   "titulo"
+    t.text     "texto"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", :force => true do |t|
     t.string   "titulo"
     t.text     "texto"
     t.datetime "created_at"

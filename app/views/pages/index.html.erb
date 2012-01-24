@@ -2,24 +2,21 @@
 
 <table>
   <tr>
-    <th>Titulo</th>
-    <th>Texto</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th style="width: 100%" >Título</th>
+    <th colspan="3"></th>
+
   </tr>
 
 <% @pages.each do |page| %>
   <tr>
     <td><%= page.titulo %></td>
-    <td><%= page.texto %></td>
-    <td><%= link_to 'Show', page %></td>
-    <td><%= link_to 'Edit', edit_page_path(page) %></td>
-    <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', page %></td>
+    <td><%= link_to 'Editar', edit_page_path(page) %></td>
+    <td><%= link_to 'Remover', page, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Page', new_page_path %>
+<%= link_to 'Nova Página', new_page_path %>
